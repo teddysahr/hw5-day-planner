@@ -35,14 +35,14 @@ if (timeEl > 9) {
 }
 
 var plansNine = document.querySelector("#time-block-9");
-var saveButton = document.querySelector("#save1");
-var retrievePlans9 = localStorage.getItem("plansNine");
+var saveButtonNine = document.querySelector("#save9");
+var retrievePlansNine = localStorage.getItem("plansNine");
 
-saveButton.addEventListener("click", function () {
+saveButtonNine.addEventListener("click", function () {
   localStorage.setItem("plansNine", plansNine.value);
 });
 
-plansNine.textContent = retrievePlans9;
+plansNine.textContent = retrievePlansNine;
 
 //10AM
 
@@ -59,6 +59,16 @@ if (timeEl == 10) {
 if (timeEl > 10) {
   tenBlock.classList.add("past");
 }
+
+var plansTen = document.querySelector("#time-block-10");
+var saveButtonTen = document.querySelector("#save10");
+var retrievePlansTen = localStorage.getItem("plansTen");
+
+saveButtonTen.addEventListener("click", function () {
+  localStorage.setItem("plansTen", plansTen.value);
+});
+
+plansTen.textContent = retrievePlansTen;
 
 //11AM
 
