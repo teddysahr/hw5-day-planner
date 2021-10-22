@@ -24,8 +24,6 @@ var fiveBlock = document.getElementById("time-block-5");
 
 if (timeEl < 9) {
   nineBlock.classList.add("future");
-
-  console.log(timeEl);
 }
 
 if (timeEl == 9) {
@@ -37,9 +35,7 @@ if (timeEl > 9) {
 }
 
 var plansNine = document.querySelector("#time-block-9");
-
 var saveButton = document.querySelector("#save1");
-
 var retrievePlans9 = localStorage.getItem("plansNine");
 
 saveButton.addEventListener("click", function () {
